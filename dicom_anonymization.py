@@ -1,7 +1,7 @@
 import pydicom as pm
 import os
 
-path = r'C:\Users\fat\Documents\NEUROVASCULAR\BIOSHIP_anonymous\B-HUVM-438'
+path = r'folder_path'
 
 #Function to extract the paths of each image:
 
