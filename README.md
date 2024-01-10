@@ -15,7 +15,11 @@ This basic script is tailored to the needs of my project, but it can serve as a 
 
 Make sure you have the pydicom library installed in your Python environment. You can install it using the following command:
 
-pip install pydicom
+```python  
+pip install pydicom    
+```
+
+
 
 
 2. Directory Configuration:
