@@ -11,7 +11,7 @@ This basic script is tailored to the needs of my project, but it can serve as a 
 
 ### How to use:
 
-1. Previous requirements:  
+1. **Previous requirements:**  
 
 Make sure you have the pydicom library installed in your Python environment. You can install it using the following command:
 
@@ -19,28 +19,25 @@ Make sure you have the pydicom library installed in your Python environment. You
 pip install pydicom    
 ```
 
-
-
-
-2. Directory Configuration:
+2. **Directory Configuration:**
 
 Defines the path of the directory containing the DICOM files in the path variable at the beginning of the script.
 
-3. Script Execution:
+3. **Script Execution:**
 
 Run the provided script in your Python environment.
 
 ### Principal functions  
 
-1. Route Extraction:
+1. **Route Extraction:**
 
 The extract_paths function loops through the specified directory and extracts the full paths of each DICOM file in the directory.  
 
-2. Deleting "Dose Report" Files:
+2. **Deleting "Dose Report" Files:**
 
 The is_doseinf function checks if a DICOM file has the serial description "Dose Report". If so, the file is removed from the directory. (This file is attached to the imaging study, but is not relevant to their assessment and contains printed patient data that cannot be anonymized. You can assess if in your case you do not need to do this step.)
 
-3. Anonymization of Patient Data:
+3. **Anonymization of Patient Data:**
 
 The anonymize function checks if a DICOM file has the attributes PatientName, PatientID, PatientBirthDate, and PatientSex. If these attributes are present, the patient data is anonymized and the file is saved with the changes.  
 
